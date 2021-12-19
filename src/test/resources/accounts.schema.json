@@ -29,10 +29,11 @@
         "default": 0
       },
       "currency": {
-        "type": "string",
+        "type": "object",
         "properties": {
-
-          "currency_type": {"enum": ["RUB", "USD"] }
+          "code": { "type": "number"},
+          "currency_name": {"type": "string" },
+          "currency_type": {"enum": ["RUR", "USD"] }
         }
       }
 
